@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bubble Game</title>
+    <title>Bubble Game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(154, 164, 138);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .panel{
+            overflow: hidden;
+            width: 80%;
+            height: 80%;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .paneltop{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            width: 100%;
+            height: 100px;
+            background-color: rgb(148, 212, 148);
+        }
+        .box{
+            padding: 10px;
+            background-color: antiquewhite;
+            border-radius: 5px;
+        }
+        .elem{
+            width: 30%;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="main">
+        <div class="panel">
+            <div class="paneltop">
+                <div class="elem">
+                    <h4>Score</h4>
+                    <div class="box"></div>
+                </div>
+                <div class="elem">
+                    <h4>Score</h4>
+                    <div class="box"></div>
+                </div>
+                <div class="elem">
+                    <h4>Score</h4>
+                    <div class="box"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </body>
 </html>
