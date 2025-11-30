@@ -31,6 +31,7 @@
             border-radius: 10px;
         }
         .paneltop{
+            padding: 0% 30%;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -43,9 +44,40 @@
             padding: 10px;
             background-color: antiquewhite;
             border-radius: 5px;
+            color: black;
+            font-weight: 700;
+            font-size: 22px;
+            padding: 10px 20px;
         }
         .elem{
-            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .elem h2{
+            font-weight: 500;
+            font-size: 22px;
+        }
+        .panelbottom{
+            width: 100%;
+            /* Here we use calc function to subtract height between percentage and pixels */
+            height: calc(100% - 100px);
+            padding: 20px;
+        }
+        .bubble{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(74, 139, 74);
+            color: white;
+            border-radius: 50%;
+            font-weight: 500;
+        }
+        .bubble:hover{
+            background-color: rgb(12, 29, 12);
         }
     </style>
 </head>
@@ -54,18 +86,22 @@
         <div class="panel">
             <div class="paneltop">
                 <div class="elem">
-                    <h4>Score</h4>
-                    <div class="box"></div>
+                    <h2>Hit</h2>
+                    <div class="box">4</div>
                 </div>
                 <div class="elem">
-                    <h4>Score</h4>
-                    <div class="box"></div>
+                    <h2>Timer</h2>
+                    <div class="box">50</div>
                 </div>
                 <div class="elem">
-                    <h4>Score</h4>
-                    <div class="box"></div>
+                    <h2>Score</h2>
+                    <div class="box">6</div>
                 </div>
 
+            </div>
+            <div class="panelbottom">
+                <div class="bubble">5
+                </div>
             </div>
 
         </div>
