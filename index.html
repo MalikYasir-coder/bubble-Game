@@ -1,86 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Bubble Game</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html,body{
-            width: 100%;
-            height: 100%;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        .main{
-            width: 100%;
-            height: 100%;
-            background-color: rgb(154, 164, 138);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .panel{
-            overflow: hidden;
-            width: 80%;
-            height: 80%;
-            background-color: white;
-            border-radius: 10px;
-        }
-        .paneltop{
-            padding: 0% 30%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            width: 100%;
-            height: 100px;
-            background-color: rgb(148, 212, 148);
-        }
-        .box{
-            padding: 10px;
-            background-color: antiquewhite;
-            border-radius: 5px;
-            color: black;
-            font-weight: 700;
-            font-size: 22px;
-            padding: 10px 20px;
-        }
-        .elem{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-        }
-        .elem h2{
-            font-weight: 500;
-            font-size: 22px;
-        }
-        .panelbottom{
-            width: 100%;
-            /* Here we use calc function to subtract height between percentage and pixels */
-            height: calc(100% - 100px);
-            padding: 20px;
-        }
-        .bubble{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
-            height: 60px;
-            background-color: rgb(74, 139, 74);
-            color: white;
-            border-radius: 50%;
-            font-weight: 500;
-        }
-        .bubble:hover{
-            background-color: rgb(12, 29, 12);
-        }
-    </style>
+            
 </head>
+
 <body>
     <div class="main">
         <div class="panel">
@@ -99,13 +27,15 @@
                 </div>
 
             </div>
-            <div class="panelbottom">
-                <div class="bubble">5
-                </div>
+            <div class="panelbottom">        
             </div>
 
         </div>
 
-    </div>
+
+
+
+        <script src="script.js"></script>
 </body>
+
 </html>
